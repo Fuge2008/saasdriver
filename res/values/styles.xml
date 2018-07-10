@@ -1,0 +1,293 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- 主界面RadioGroup样式 -->
+    <style name="ActivityMainRadioGroupStyle">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/main_activity_radio_button_selector</item>
+        <item name="android:textSize">@dimen/main_activity_radioGroup_textSize</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:drawablePadding">-4dp</item>
+    </style>
+    <!-- 订单界面RadioGroup样式 -->
+    <style name="FragmentOrderRadioGroupStyle">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/fragment_order_button_textcolor_selector</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:drawableBottom">@drawable/fragment_order_button_drawabletop_selector</item>
+        <item name="android:drawablePadding">-6dp</item>
+    </style>
+
+    <!-- 订单中心订单接收TextView样式 -->
+    <style name="FragmentOrderReceiveTextSize">
+        <item name="android:textSize">@dimen/fragment_order_receive_textsize</item>
+    </style>
+
+    <!-- 订单接收列表里程+人数TextView样式 -->
+    <style name="order_receive_distance_number">
+        <item name="android:textSize">@dimen/order_receive_distance_number</item>
+        <item name="android:textColor">@color/whitesmoke</item>
+    </style>
+    <!-- 订单接收列表中起始点+终止点TextView格式 -->
+    <style name="order_receive_start_end_style">
+        <item name="android:textSize">@dimen/order_receive_start_end_point</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- 个人中心的TextView样式 -->
+    <style name="Style_TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/app_padding</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="Style_TextView2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingRight">@dimen/app_padding</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <!-- =====================Checkbox属性===================== -->
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checbox_selector</item>
+    </style>
+
+    <!-- 车辆中心的iamge样式 -->
+    <style name="Style_iamge">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">15dp</item>
+    </style>
+
+    <style name="Style_iamge2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Style_iamge_right">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+
+    <!-- =====================dialog属性===================== -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/panel</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!-- =====================订单确认界面订单详情属性===================== -->
+    <style name="order_detail_item_TextView">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="order_detail_item_layout_padding">
+        <item name="android:paddingTop">4sp</item>
+        <item name="android:paddingLeft">20sp</item>
+        <item name="android:paddingRight">20sp</item>
+    </style>
+
+    <!-- =====================订单确认收费界面订单详情属性===================== -->
+    <style name="activity_order_cost_ensure_TextView">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="activity_order_cost_ensure_layout_padding">
+        <item name="android:paddingTop">4sp</item>
+        <item name="android:paddingLeft">20sp</item>
+        <item name="android:paddingRight">20sp</item>
+    </style>
+    <!-- 百度地图路线规划RadioGroup样式 -->
+    <style name="RoutePlanRadioGroupStyle">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <!-- 订单确认Button样式 -->
+    <style name="OrderEnsureButtonStyle">
+        <item name="android:background">@drawable/order_button_selector</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <!-- 订单数据上传基本费用TextView -->
+    <style name="OrderDataCommitNameStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="OrderDataCommitMoneyStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <!-- 订单数据上传Button样式 -->
+    <style name="OrderDataCommitButtonStyle">
+        <item name="android:background">@drawable/order_button_selector</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+    <!-- 订单数据修改基本样式 -->
+    <style name="orderDataEditTLayoutStyle">
+        <item name="android:layout_marginRight">20sp</item>
+        <item name="android:layout_marginLeft">20sp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="orderDataEditTextViewStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="orderDataEditEditTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <!-- 订单计划Button样式 -->
+    <style name="OrderPlanButtonStyle">
+        <item name="android:background">@drawable/order_button_selector</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <!-- =====================popupwindow===================== -->
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_show</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_out</item>
+    </style>
+
+    <!-- =====================订单接收界面条目字体统一颜色===================== -->
+    <style name="item_order_receive_text_color">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- =====================订单中心主界面样式===================== -->
+    <style name="OrderCenterTvTime">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lines">1</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#ff0000</item>
+    </style>
+
+    <style name="OrderCenterTvProperty">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black_light</item>
+    </style>
+
+    <style name="OrderCenterTvLine">
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:background">#bbbbbb</item>
+    </style>
+
+    <style name="OrderCenterImgCircle">
+        <item name="android:layout_width">26dp</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="OrderCenterItemTv">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="OrderCenterItemImg">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <!-- =====================Sweet-dialog===================== -->
+    <style name="alert_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/float_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="dialog_blue_button" parent="android:Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">31dp</item>
+        <item name="android:background">@drawable/blue_button_background</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">21dp</item>
+        <item name="android:paddingRight">21dp</item>
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+    <!-- =====================itemdialog===================== -->
+    <style name="MyDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!-- =================================标题属性================================= -->
+    <style name="title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/title_color</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:paddingLeft">60dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+</resources>

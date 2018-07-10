@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="app_name">SaasDriver</string>
+    <string name="action_settings">Settings</string>
+    <!-- 主界面radioButton -->
+    <string name="activity_main_order">订单中心</string>
+    <string name="activity_main_service">车主服务</string>
+    <string name="activity_main_driver">车主中心</string>
+    <string name="activity_main_settings">系统设置</string>
+    <!-- 订单界面radioButton -->
+    <string name="fragment_order_receive">开始接单</string>
+    <string name="fragment_order_underway">正在进行</string>
+    <string name="fragment_order_future">未来计划</string>
+    <string name="fragment_order_history">历史记录</string>
+    <string name="title_activity_driver_login">DriverLoginActivity</string>
+    <string name="title_activity_driver_activity_main">DriverActivityMainActivity</string>
+    <string name="title_activity_driver_regist">DriverRegistActivity</string>
+    <!-- 订单中心订单接收模块 -->
+    <string name="fragment_order_receive_switch">订单接收</string>
+    <string name="fragment_order_receive_type">接单模式</string>
+    <string name="fragment_order_receive_start">订单列表</string>
+    <!-- 订单接收类型默认为全部加接收 -->
+    <string name="fragment_order_receive_type_all">全部</string>
+    <string name="fragment_order_receive_type_jishi">即时</string>
+    <string name="fragment_order_receive_type_yuyue">预约</string>
+    <!-- 订单接收Title -->
+    <string name="activity_order_receive_title">订单接收</string>
+    <!-- 订单接收列表中的属性值 -->
+    <string name="order_receive_distance">客户类型：</string>
+    <string name="order_receive_start_point">起始点：</string>
+    <string name="order_receive_end_point">终止点：</string>
+    <!-- 订单接收中的订单确认Title -->
+    <string name="activity_order_ensure_title">订单确认</string>
+    <!-- 订单部分的出车服务中的Title -->
+    <string name="activity_order_servicing_title">服务中</string>
+    <!-- 订单部分的确认收费的Title -->
+    <string name="activity_order_cost_ensure_title">确认收费</string>
+    <!-- 订单部分的数据上传界面的Title -->
+    <string name="activity_order_data_commit_title">提交数据</string>
+    <!-- 订单部分的数据修改界面的Title -->
+    <string name="activity_order_data_edit_title">数据修改</string>
+    <!-- 订单确认中的准备出车Title -->
+    <string name="activity_order_ready_title">出车准备</string>
+    <!-- 订单计划中的订单详情Title -->
+    <string name="activity_plan_order_detail_title">订单详情</string>
+    <!-- 订单确认详情TextView -->
+    <string name="activity_order_detail_item_name">客户名称：</string>
+    <string name="activity_order_detail_item_tel">联系电话：</string>
+    <string name="activity_order_detail_item_useType">用户类别：</string>
+    <string name="activity_order_detail_item_useTime">用车时间：</string>
+    <string name="activity_order_detail_item_orderTime">下单时间：</string>
+    <string name="activity_order_detail_item_orderNum">订单号码：</string>
+    <string name="activity_order_detail_item_personNum">用车人数：</string>
+    <string name="activity_order_detail_item_startLoc">起始位置：</string>
+    <string name="activity_order_detail_item_endLoc">终止位置：</string>
+    <string name="activity_order_cost_ensure_time">服务时长：</string>
+    <string name="activity_order_cost_ensure_distance">服务里程：</string>
+    <string name="activity_order_cost_ensure_cost">服务价格：</string>
+    <!-- 百度地图路径类型TextView -->
+    <string name="activity_route_plan_driving">驾车</string>
+    <string name="activity_route_plan_transit">公交</string>
+    <string name="activity_route_plan_biking">骑车</string>
+    <string name="activity_route_plan_walking">步行</string>
+    <!-- 上传数据时重新点火提示 -->
+    <string name="car_ignite_again">● 重新点火后，车辆行驶具体数据将自动上传到服务器，作为本次行驶的记录与参考</string>
+    <!-- 上传数据时重新点火提示 -->
+    <string name="activity_order_data_commit_order_code">订单号:</string>
+    <string name="activity_order_data_commit_road_toll">路桥费:</string>
+    <string name="activity_order_data_commit_parking_fees">停车费:</string>
+    <string name="activity_order_data_commit_othser_fees">其他费用:</string>
+    <string name="activity_order_data_commit_km">行程公里:</string>
+    <string name="activity_order_data_commit_start_time">开始时间:</string>
+    <string name="activity_order_data_commit_end_time">结束时间:</string>
+    <string name="activity_order_data_commit_end_position">实际终点:</string>
+    <string name="activity_order_data_commit_default_end_position">默认终点</string>
+    <string name="activity_order_data_commit_notes">备注说明:</string>
+    <string name="activity_order_data_commit_notes_content">其他费用详情备注说明</string>
+    <string name="app_setting">APP设置</string>
+    <string name="system_setting">App设置</string>
+    <string name="use_guide">使用指南</string>
+    <string name="faq">FAQ</string>
+    <string name="contact_customer_service">联系客服</string>
+    <string name="about_SAAS">关于SAAS</string>
+    <string name="my_informations">个人中心</string>
+    <string name="message_center">消息中心</string>
+    <string name="software_upgrade">软件升级</string>
+    <string name="password_change">密码修改</string>
+    <string name="setting">设置</string>
+    <string name="region">地区</string>
+    <!-- 自定义组件 -->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">松开可以刷新</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">加载中</string>
+    <!-- 消除警告，可忽略 -->
+    <string name="d">图片描述</string>
+    <!-- =====================Sweet-dialog===================== -->
+    <string name="dialog_default_title">提示!</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="LOADING">玩命加载中...</string>
+    <string name="title_activity_base_map">BaseMapActivity</string>
+    <string name="add_point">增加途经点</string>
+    <string name="add_point1">请输入途经点1</string>
+    <string name="add_point2">请输入途经点2</string>
+    <string name="add_lnt">纬度（保留六位小数）</string>
+    <string name="add_lng">经度（保留六位小数）</string>
+    <string name="title_activity_route_guide">RouteGuideActivity</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_news_detail">NewsDetailActivity</string>
+
+</resources>

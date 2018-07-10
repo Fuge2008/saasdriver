@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:saasuser="http://schemas.android.com/apk/res/com.example.saascardriver"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <com.small.saasdriver.view.BaseTitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        saasuser:saasusertitle="个人钱包" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="余额"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="right"
+            android:text="¥1257.00"
+            android:textSize="35dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/s_line" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10.0dip"
+            android:drawableRight="@drawable/arrow_next"
+            android:gravity="center_vertical"
+            android:paddingBottom="8.0dip"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="20.0dip"
+            android:paddingTop="8.0dip"
+            android:text="提现"
+            android:textColor="@color/black"
+            android:textSize="18.0dip" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/wallet_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:scrollbars="@null"
+        android:textSize="16sp" />
+
+</LinearLayout>

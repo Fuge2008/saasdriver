@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/order_detail_item_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/app_color" >
+
+        <ImageView
+            android:id="@+id/img_back_arrow"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/return_icon" />
+
+        <TextView
+            android:id="@+id/activity_order_ensure_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/img_back_arrow"
+            android:layout_toRightOf="@+id/img_back_arrow"
+            android:text="@string/activity_order_cost_ensure_title"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/main_activity_title_textsize" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/order_detail_item_layout_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <!-- 用户名称 -->
+
+                    <TextView
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_order_detail_item_name" />
+
+                    <TextView
+                        android:id="@+id/order_Detail_item_name"
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="小猫停车" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/order_detail_item_layout_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <!-- 联系电话 -->
+
+                    <TextView
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/activity_order_detail_item_tel" />
+
+                    <TextView
+                        android:id="@+id/order_Detail_item_tel"
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="110" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/order_detail_item_layout_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <!-- 用户类型 -->
+
+                    <TextView
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/activity_order_detail_item_useType" />
+
+                    <TextView
+                        android:id="@+id/order_Detail_item_useType"
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="政企用户" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/order_detail_item_layout_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <!-- 用车时间 -->
+
+                    <TextView
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/activity_order_detail_item_useTime" />
+
+                    <TextView
+                        android:id="@+id/order_Detail_item_useTime"
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016-10-31  11:11:11" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/order_detail_item_layout_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <!-- 订单时间 -->
+
+                    <TextView
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/activity_order_detail_item_orderTime" />
+
+                    <TextView
+                        android:id="@+id/order_Detail_item_orderTime"
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016-10-31  11:11:11" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/order_detail_item_layout_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <!-- 订单号码 -->
+
+                    <TextView
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/activity_order_detail_item_orderNum" />
+
+                    <TextView
+                        android:id="@+id/order_Detail_item_orderNum"
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20161031111111" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/order_detail_item_layout_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <!-- 用车人数 -->
+
+                    <TextView
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/activity_order_detail_item_personNum" />
+
+                    <TextView
+                        android:id="@+id/order_Detail_item_personNum"
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/order_detail_item_layout_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <!-- 起始位置 -->
+
+                    <TextView
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/activity_order_detail_item_startLoc" />
+
+                    <TextView
+                        android:id="@+id/order_Detail_item_startLoc"
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="深圳市宝安区宝源路劳动村2对22巷2号楼2楼222室" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/order_detail_item_layout_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <!-- 终止位置 -->
+
+                    <TextView
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/activity_order_detail_item_endLoc" />
+
+                    <TextView
+                        android:id="@+id/order_Detail_item_endLoc"
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="深圳市南山区软件产业基地5栋E座4楼406小猫设备支付" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/darkgray_lucency_4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/order_detail_item_layout_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <!-- 服务时长 -->
+
+                    <TextView
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_order_cost_ensure_time" />
+
+                    <TextView
+                        android:id="@+id/order_detail_item_name"
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00:22:22" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/order_detail_item_layout_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <!-- 服务里程 -->
+
+                    <TextView
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/activity_order_cost_ensure_distance" />
+
+                    <TextView
+                        android:id="@+id/order_detail_item_tel"
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="110km" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    style="@style/order_detail_item_layout_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <!-- 服务金额 -->
+
+                    <TextView
+                        style="@style/activity_order_cost_ensure_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/activity_order_cost_ensure_cost" />
+
+                    <TextView
+                        android:id="@+id/order_detail_item_useType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="￥110"
+                        android:textColor="@color/orangered"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/darkgray_lucency_4" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/activity_order_cost_ensure_ensure"
+                style="@style/OrderEnsureButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/order_button_selector"
+                android:text="确认收款"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

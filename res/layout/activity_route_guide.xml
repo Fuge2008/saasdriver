@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:saasuser="http://schemas.android.com/apk/res/com.example.saascardriver"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.small.saasdriver.activity.map.RouteGuideActivity" >
+
+    <com.small.saasdriver.view.BaseTitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        saasuser:saasusertitle="路线规划" />
+
+    <LinearLayout
+        android:id="@+id/ll_point_location1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.small.saasdriver.view.ClearEditText
+            android:id="@+id/ce_search_point1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="3"
+            android:background="#ffffff"
+            android:focusable="true"
+            android:hint="请输入您途径的地点"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColorHint="#eeeeee"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_subimit1"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_search_bg"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="新增" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_show_point1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/tv_show_point2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/btn_route"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_search_bg"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="确定" />
+
+    <ListView
+        android:id="@+id/lv_search_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+    </ListView>
+
+</LinearLayout>

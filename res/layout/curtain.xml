@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/img_curtain_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/line" >
+
+            <LinearLayout
+                android:id="@+id/subscribe_main_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:paddingBottom="14.0dip" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="5dp" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="#333333" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的类型"
+                        android:textColor="#cccccc"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="#333333" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/seperate_line"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#333333" />
+
+                <com.small.saasdriver.view.DragGrid
+                    android:id="@+id/userGridView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginRight="14dip"
+                    android:gravity="center"
+                    android:horizontalSpacing="14dip"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="4"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:scrollbars="vertical"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="14.0px" />
+
+                <View
+                    android:id="@+id/seperate_line2"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#333333" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="#333333" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="更多类型"
+                        android:textColor="#cccccc"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="#333333" />
+                </LinearLayout>
+
+                <com.small.saasdriver.view.OtherGridView
+                    android:id="@+id/otherGridView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="14dip"
+                    android:layout_marginRight="14dip"
+                    android:gravity="center"
+                    android:horizontalSpacing="14dip"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="4"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:scrollbars="vertical"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="14.0px" />
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            android:id="@+id/category_layout"
+            layout="@layout/news_channel_click1"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_curtain_rope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/img_curtain_ad"
+        android:layout_marginRight="5dip"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:src="@drawable/shengzi" />
+
+</RelativeLayout>

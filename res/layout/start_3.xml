@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView 
+        android:id="@+id/guidance_page3_bg"       
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" 
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentBottom="true"
+  		android:layout_centerHorizontal="true"
+        android:text="加  入  我  们"
+        android:gravity="center"
+        android:textColor="@color/white"
+       	android:background="@drawable/guide_button_selector"
+        />
+
+</RelativeLayout>

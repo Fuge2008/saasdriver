@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F9F9F9"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/app_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_background"
+                android:drawableLeft="@drawable/app_setting"
+                android:drawablePadding="10dip"
+                android:drawableRight="@drawable/arrow_next"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="16dip"
+                android:paddingTop="10dip"
+                android:text="@string/app_setting"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/s_line" />
+
+            <TextView
+                android:id="@+id/use_guide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_background"
+                android:drawableLeft="@drawable/shiyongzhinan"
+                android:drawablePadding="10dip"
+                android:drawableRight="@drawable/arrow_next"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="16dip"
+                android:paddingTop="10dip"
+                android:text="@string/use_guide"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/s_line" />
+
+            <TextView
+                android:id="@+id/faq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_background"
+                android:drawableLeft="@drawable/faq"
+                android:drawablePadding="10dip"
+                android:drawableRight="@drawable/arrow_next"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="16dip"
+                android:paddingTop="10dip"
+                android:text="FAQ"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/s_line" />
+
+            <TextView
+                android:id="@+id/contact_customer_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_background"
+                android:drawableLeft="@drawable/lianxikefu"
+                android:drawablePadding="10dip"
+                android:drawableRight="@drawable/arrow_next"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="16dip"
+                android:paddingTop="10dip"
+                android:text="@string/contact_customer_service"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/s_line" />
+
+            <TextView
+                android:id="@+id/about_SAAS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_background"
+                android:drawableLeft="@drawable/saas"
+                android:drawablePadding="10dip"
+                android:drawableRight="@drawable/arrow_next"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="16dip"
+                android:paddingTop="10dip"
+                android:text="@string/about_SAAS"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/s_line" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/text_exit"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="退出登录"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

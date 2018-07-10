@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:saasuser="http://schemas.android.com/apk/res/com.example.saascardriver"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <com.small.saasdriver.view.BaseTitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        saasuser:saasusertitle="个人信息" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="10.0dip" >
+
+            <RelativeLayout
+                android:id="@+id/mine_change_code"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="10.0dip"
+                    android:drawableRight="@drawable/ic_launcher"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8.0dip"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="20.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text="用户头像"
+                    android:textColor="@color/black"
+                    android:textSize="18.0dip" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/s_line" />
+
+            <RelativeLayout
+                android:id="@+id/stop_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/query_tv_number1"
+                    style="@style/Style_TextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="用 户ID" />
+
+                <TextView
+                    android:id="@+id/query_tv_number"
+                    style="@style/Style_TextView"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/query_tv_number1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="654895" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/s_line" />
+
+            <RelativeLayout
+                android:id="@+id/stop_view2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/query_tv_number21"
+                    style="@style/Style_TextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="姓    名" />
+
+                <EditText
+                    android:id="@+id/query_tv_number2"
+                    style="@style/Style_TextView"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/query_tv_number21"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入您的姓名" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/s_line" />
+
+            <RelativeLayout
+                android:id="@+id/stop_view3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/query_tv_number31"
+                    style="@style/Style_TextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="性    别" />
+
+                <RadioGroup
+                    android:id="@+id/checksex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/query_tv_number31"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="男" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="女" >
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/s_line" />
+
+            <RelativeLayout
+                android:id="@+id/stop_view4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/query_tv_number41"
+                    style="@style/Style_TextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="年      龄" />
+
+                <EditText
+                    android:id="@+id/query_tv_number4"
+                    style="@style/Style_TextView"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/query_tv_number41"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入您的年龄" />
+
+                <RelativeLayout
+                    android:id="@+id/stop_view6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1"
+                    android:padding="5dp" >
+
+                    <TextView
+                        style="@style/Style_TextView"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="驾驶证类别" />
+
+                    <Spinner
+                        android:id="@+id/query_tv_number6"
+                        style="@style/Style_TextView"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/s_line" />
+
+            <RelativeLayout
+                android:id="@+id/stop_view5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/query_tv_number51"
+                    style="@style/Style_TextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="驾驶年龄" />
+
+                <EditText
+                    android:id="@+id/query_tv_number5"
+                    style="@style/Style_TextView"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/query_tv_number51"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="20年" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/s_line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/s_line" />
+
+            <RelativeLayout
+                android:id="@+id/stop_view7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/query_tv_number71"
+                    style="@style/Style_TextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="手 机  号" />
+
+                <EditText
+                    android:id="@+id/query_tv_number7"
+                    style="@style/Style_TextView"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/query_tv_number71"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="输入您的手机号" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/s_line" />
+
+            <RelativeLayout
+                android:id="@+id/stop_view8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/query_tv_number81"
+                    style="@style/Style_TextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="身份证号" />
+
+                <EditText
+                    android:id="@+id/query_tv_number8"
+                    style="@style/Style_TextView"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@id/query_tv_number81"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入您的身份证号" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/s_line" />
+
+            <RelativeLayout
+                android:id="@+id/stop_view9"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/query_tv_number91"
+                    style="@style/Style_TextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="所属公司" />
+
+                <EditText
+                    android:id="@+id/query_tv_number9"
+                    style="@style/Style_TextView"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@id/query_tv_number91"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入您的所属公司"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/s_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <Button
+                    android:id="@+id/post_person"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/loginbutton_selector"
+                    android:text="确 认 提 交"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

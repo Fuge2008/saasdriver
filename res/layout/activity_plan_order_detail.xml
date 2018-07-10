@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/activity_plan_order_detail_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#000000" >
+
+        <ImageView
+            android:id="@+id/img_back_arrow"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/return_icon" />
+
+        <TextView
+            android:id="@+id/activity_plkan_order_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_plan_order_detail_title"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/main_activity_title_textsize" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未来计划中的订单详情" />
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.small.saasdriver.activity.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/activity_main_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/app_color" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@drawable/saas_car_logo" />
+
+            <TextView
+                android:id="@+id/activity_main_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="SaasDriver"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/main_activity_title_textsize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/steps_container"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/activity_main_title_layout" >
+    </FrameLayout>
+
+    <com.small.saasdriver.view.NoScrollViewPager
+        android:id="@+id/nvp_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/steps_container"
+        android:orientation="vertical" 
+    />
+   
+
+    <LinearLayout
+        android:id="@+id/main_activity_radioGroup_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray" />
+
+        <RadioGroup
+            android:id="@+id/rg_menu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#eeeeee"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_order"
+                style="@style/ActivityMainRadioGroupStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:drawableTop="@drawable/main_activity_radio_button_order_selector"
+                android:text="@string/activity_main_order" />
+
+            <RadioButton
+                android:id="@+id/rb_center"
+                style="@style/ActivityMainRadioGroupStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/main_activity_radio_button_driver_selector"
+                android:text="@string/activity_main_driver" />
+
+            <RadioButton
+                android:id="@+id/rb_settings"
+                style="@style/ActivityMainRadioGroupStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/main_activity_radio_button_settings_selector"
+                android:text="@string/activity_main_settings" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

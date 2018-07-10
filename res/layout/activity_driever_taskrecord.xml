@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:saasuser="http://schemas.android.com/apk/res/com.example.saascardriver"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <com.small.saasdriver.view.BaseTitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        saasuser:saasusertitle="订单记录" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1D7BBB"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/taskrecord_today"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#1D7BBB"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="当天记录"
+            android:textColor="@drawable/textcolor" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/s_line" />
+
+        <TextView
+            android:id="@+id/taskrecord_history"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#1D7BBB"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="历史记录"
+            android:textColor="@drawable/textcolor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F9F9F9"
+        android:orientation="vertical" />
+
+</LinearLayout>

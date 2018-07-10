@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:saasuser="http://schemas.android.com/apk/res/com.example.saascardriver"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <com.small.saasdriver.view.BaseTitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        saasuser:saasusertitle="订单编辑" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/text_road_toll"
+                    style="@style/orderDataEditTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|end"
+                    android:text="路桥费" />
+
+                <EditText
+                    android:id="@+id/et_load_bill"
+                    style="@style/orderDataEditEditTextStyle"
+                    android:layout_toRightOf="@+id/text_road_toll"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="0.00"
+                    android:inputType="number"
+                    android:textSize="14sp" >
+                </EditText>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/darkgray_lucency_8" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/text_parking_fees"
+                    style="@style/orderDataEditTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|end"
+                    android:text="停车费：" />
+
+                <EditText
+                    android:id="@+id/et_parking_bill"
+                    style="@style/orderDataEditEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_toRightOf="@+id/text_parking_fees"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="0.00"
+                    android:inputType="number"
+                    android:textSize="14sp" >
+                </EditText>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/darkgray_lucency_8" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/text_others_fees"
+                    style="@style/orderDataEditTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|end"
+                    android:text="其他费用：" />
+
+                <EditText
+                    android:id="@+id/et_other_bill"
+                    style="@style/orderDataEditEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_toRightOf="@+id/text_others_fees"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="0.00"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/darkgray_lucency_8" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/text_end_position"
+                    style="@style/orderDataEditTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|end"
+                    android:text="实际终点：" />
+
+                <EditText
+                    android:id="@+id/et_end_position"
+                    style="@style/orderDataEditEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_toRightOf="@+id/text_end_position"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="请输入目的地"
+                    android:inputType="text"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/darkgray_lucency_8" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp" >
+
+                <EditText
+                    android:id="@+id/et_other_describe"
+                    style="@style/orderDataEditEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/text_commit_notes"
+                    android:ems="10"
+                    android:hint="其他费用说明"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:paddingTop="5dp"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/darkgray_lucency_8" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/order_button_selector"
+                android:gravity="center"
+                android:text="确  定"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
